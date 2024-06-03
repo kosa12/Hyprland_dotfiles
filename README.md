@@ -6,6 +6,8 @@
 
 ### The startup page for the browser is inspired by https://github.com/Nainish-Rai, also shoutout to him!
 
+# If you like it, give it a star!
+
 # I will answer to any question in the `issues` section, so be brave and use it
 
 ![Desktop](screenshots/swappy-20240603_193236.png)

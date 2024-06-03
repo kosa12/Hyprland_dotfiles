@@ -1,0 +1,92 @@
+{
+    "layer": "top",
+    "position": "right",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 200,
+    "width": 50,
+    "modules-center": [
+        "custom/launch_thunar",
+        "custom/launch_firefox",
+        "custom/launch_chrome",
+        "custom/launch_spotify",
+        "custom/launch_kitty",
+        "custom/launch_vscode",
+        "custom/launch_vim",
+        "custom/launch_java",
+        "custom/launch_mongo",
+        "custom/launch_discord",
+        "custom/launch_steam"
+    ],
+
+    "include": [
+        "~/.config/HyprV/waybar/conf/mesu.jsonc"
+    ],
+
+    "custom/launch_firefox": {
+        "format": "",
+        "on-click": "firefox",
+        "tooltip": false
+    },
+
+    "custom/launch_chrome": {
+        "format": "",
+        "on-click": "chromium",
+        "tooltip": false
+    },
+
+    "custom/launch_spotify": {
+        "format": "",
+        "on-click": "spotify-launcher",
+        "tooltip": false
+    },
+
+    "custom/launch_thunar": {
+        "format": "",
+        "on-click": "exec thunar",
+        "tooltip": false
+    },
+
+    "custom/launch_kitty": {
+        "format": "",
+        "on-click": "exec kitty",
+        "tooltip": false
+    },
+
+    "custom/launch_vscode": {
+        "format": "",
+        "on-click": "exec code",
+        "tooltip": false
+    },
+
+    "custom/launch_java": {
+        "format": "",
+        "on-click": "exec intellij-idea-community",
+        "tooltip": false
+    },
+
+    "custom/launch_mongo": {
+        "format": "",
+        "on-click": "exec com.mongodb.Compass",
+        "tooltip": false
+    },
+
+    "custom/launch_vim": {
+        "format": "",
+        "on-click": "exec vim",
+        "tooltip": false
+    },
+    
+    "custom/launch_discord": {
+        "format": "󰙯",
+        "on-click": "exec discord",
+        "tooltip": false
+    },
+    "custom/launch_steam": {
+        "format": "󰓓",
+        "on-click": "exec com.valvesoftware.Steam",
+        "tooltip": false
+    }
+}

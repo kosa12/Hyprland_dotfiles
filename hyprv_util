@@ -20,17 +20,11 @@ update_theme() {
     if [[ $VER == "v4" || $VERTO == "v4-" ]]; then
         xfconf-query -c xsettings -p /Net/IconThemeName -s "Papirus-Dark"
         gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark"
-    else 
-        xfconf-query -c xsettings -p /Net/IconThemeName -s "Adwaita$SWITCHTO"
-        gsettings set org.gnome.desktop.interface icon-theme "Adwaita$SWITCHTO"
     fi
-
-    xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita$SWITCHTO"
-    gsettings set org.gnome.desktop.interface gtk-theme "Adwaita$SWITCHTO"
 }
 
 get_ver() {
-    VER=$(readlink -f ~/.config/waybar/config.jsonc | cut -d '-' -f1 | cut -d '/' -f8)
+    VER="v3"
 }
 
 restart_waybar() {
@@ -38,9 +32,9 @@ restart_waybar() {
     pkill waybar
     waybar & 
 
-    get_ver   
+    get_ver
 
-    if [[ $VER == "v4" ]]; then
+    if [[ $VER == "v3" ]]; then
         waybar --config ~/.config/HyprV/waybar/conf/v4-config-bottom.jsonc
     fi
 
